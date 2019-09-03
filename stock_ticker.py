@@ -1,10 +1,11 @@
 # scrolling message bar
 import time
 import PySimpleGUI as sg 
+sg.ChangeLookAndFeel("Dark")
 
 msg = 'S&P 500: 2,906.27 | Dow 30 26,118.02 | Nasdaq 7,874.16 | '
 layout = [[sg.Text(msg , font=('Franklin Gothic Book', 25), key='_DISPLAY_')]]
-window = sg.Window('Message Scroller', layout=layout)
+window = sg.Window('Stock Market Ticker', layout=layout)
 
 timeout = 0.3
 
